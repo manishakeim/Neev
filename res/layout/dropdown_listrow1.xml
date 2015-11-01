@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"      
+    android:layout_width="300dp"
+    android:layout_height="fill_parent" >
+
+    <CheckBox
+        android:id="@+id/dl1checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+     <TextView
+         android:id="@+id/dl1select"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@+id/dl1checkBox1" />
+
+     <EditText
+         android:id="@+id/dl1editText1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerHorizontal="true"
+         android:gravity="center"
+         android:background="#ffffff"
+         android:ems="4"
+         android:text="0" >
+
+         <requestFocus />
+     </EditText>
+     
+</RelativeLayout>

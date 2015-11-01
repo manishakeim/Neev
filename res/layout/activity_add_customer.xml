@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.neev.SupplierInfo" >
+
+    <TextView
+        android:id="@+id/cdtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Customer Details"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/cdeditText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cdtextView4"
+        android:layout_alignRight="@+id/cdeditText1"
+        android:layout_below="@+id/cdtextView4"
+        android:ems="10"
+        android:inputType="textPostalAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/cdeditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cdtextView3"
+        android:layout_alignBottom="@+id/cdtextView3"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/cdeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cdtextView2"
+        android:layout_below="@+id/cdtextView2"
+        android:layout_marginTop="20dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/cdtextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cdeditText1"
+        android:layout_toLeftOf="@+id/cdeditText1"
+        android:text="Name "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cdtextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cdtextView1"
+        android:layout_below="@+id/cdtextView1"
+        android:layout_marginTop="30dp"
+        android:text="Phone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cdtextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cdtextView3"
+        android:layout_below="@+id/cdeditText2"
+        android:layout_marginTop="18dp"
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/cdbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdeditText3"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+</RelativeLayout>
+</ScrollView>

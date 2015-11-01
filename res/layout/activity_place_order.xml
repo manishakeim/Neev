@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.neev.PlaceOrder" >
+
+    <EditText
+        android:id="@+id/poeditText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pocheckBox1"
+        android:layout_alignTop="@+id/pocheckBox1"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Customer phone_no" />
+
+    <Spinner
+        android:id="@+id/pospinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/potextView1"
+        android:layout_below="@+id/potextView1"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/poeditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pospinner1"
+        android:ems="10"
+        android:hint="Expected Delivery Date" />
+
+    <Button
+        android:id="@+id/pobutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/poeditText2"
+        android:layout_below="@+id/poeditText2"
+        android:layout_marginTop="28dp"
+        android:text="Order" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pobutton1"
+        android:layout_alignBottom="@+id/pobutton1"
+        android:layout_alignRight="@+id/poeditText2"
+        android:layout_marginRight="14dp"
+        android:text="Place Another Order" />
+
+    <CheckBox
+        android:id="@+id/pocheckBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/poeditText1"
+        android:layout_alignParentTop="true"
+        android:text="New Customer" />
+
+    <TextView
+        android:id="@+id/potextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pobutton1"
+        android:layout_below="@+id/poeditText1"
+        android:layout_marginTop="16dp"
+        android:text="Product"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/poeditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pospinner1"
+        android:layout_below="@+id/poeditText3"
+        android:ems="10"
+        android:hint="Order ID" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
+

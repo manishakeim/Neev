@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.neev.Delivery" >
+
+    <TextView
+        android:id="@+id/dtextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="DELIVERY"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/deditText1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Order ID" />
+
+    <EditText
+        android:id="@+id/deditText2"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Delivered Quantity" />
+
+    <EditText
+        android:id="@+id/deditText3"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Date" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/dbutton1"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+</LinearLayout>

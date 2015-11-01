@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.neev.MainActivity" >
+
+     
+    <item
+        android:id="@+id/menuitem_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="ifRoom"
+        android:layout_gravity="left"
+        android:title="@string/ui_menu_add">
+    </item>    
+      
+    <item
+        android:id="@+id/menuitem_dashboard"
+        android:icon="@android:drawable/ic_menu_help"
+        android:showAsAction="never"
+        android:title="@string/ui_menu_dashboard">
+    </item>
+    <item
+        android:id="@+id/menuitem_export"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:showAsAction="never"
+        android:title="@string/ui_menu_export">
+    </item>
+    <item
+        android:id="@+id/menuitem_update"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:showAsAction="never"
+        android:title="@string/ui_menu_update">
+    </item>
+
+</menu>

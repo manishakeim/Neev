@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.neev.FUpdate" >
+
+    <TextView
+        android:id="@+id/futextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fuspinner1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="Item name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/fuspinner1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/futextView1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/fueditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fuspinner1"
+        android:layout_below="@+id/fuspinner1"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter price" />
+
+    <EditText
+        android:id="@+id/fueditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fueditText1"
+        android:layout_below="@+id/fueditText1"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter Quantity" />
+
+    <Button
+        android:id="@+id/fubutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fueditText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Update" />
+
+</RelativeLayout>

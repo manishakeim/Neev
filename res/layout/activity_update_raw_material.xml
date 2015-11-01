@@ -1,0 +1,210 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.neev.UpdateRawMaterial">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <Button
+        android:id="@+id/urbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ureditText5"
+        android:layout_centerHorizontal="true"
+        android:text="deduct" />
+
+    <CheckBox
+        android:id="@+id/urcheckBox3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff9800"
+        android:text="Track raw material"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ureditText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/urspinner1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/urspinner2"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Enter the quantity to be reduced"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/urspinner2"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/urtextView3"
+        android:layout_alignRight="@+id/ureditText5" />
+
+    <TextView
+        android:id="@+id/urtextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ureditText5"
+        android:layout_alignBottom="@+id/ureditText5"
+        android:layout_alignLeft="@+id/urtextView3"
+        android:text="Quantity"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/urcheckBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/urcheckBox3"
+        android:layout_below="@+id/urcheckBox3"
+        android:layout_marginTop="22dp"
+        android:text="New Supplier" />
+
+    <Button
+        android:id="@+id/urbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ureditText6"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/urtextView5"
+        android:text="Update" />
+
+    <Spinner
+        android:id="@+id/urspinner1"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/urcheckBox3"
+        android:layout_below="@+id/urcheckBox1"
+        android:layout_marginTop="18dp" />
+
+    <CheckBox
+        android:id="@+id/urcheckBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ureditText6"
+        android:layout_below="@+id/urbutton1"
+        android:layout_marginTop="25dp"
+        android:background="#ff9800"
+        android:text="Deduct raw material"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ureditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/urcheckBox1"
+        android:layout_below="@+id/urspinner1"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter new item name"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/urtextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ureditText6"
+        android:layout_alignBottom="@+id/ureditText6"
+        android:layout_alignRight="@+id/urtextView1"
+        android:text="Date"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ureditText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ureditText1"
+        android:layout_below="@+id/ureditText4"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Date"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ureditText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/urtextView2"
+        android:layout_alignBottom="@+id/urtextView2"
+        android:layout_alignLeft="@+id/urbutton2"
+        android:ems="10"
+        android:hint="Quantity"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ureditText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ureditText3"
+        android:layout_below="@+id/ureditText3"
+        android:ems="10"
+        android:hint="Enter Unit price"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/urtextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ureditText4"
+        android:layout_alignBottom="@+id/ureditText4"
+        android:layout_toLeftOf="@+id/urbutton1"
+        android:text="Unit Price"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/urtextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/urspinner1"
+        android:layout_alignLeft="@+id/ureditText1"
+        android:text="Item name "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/urtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/urtextView4"
+        android:layout_below="@+id/ureditText1"
+        android:layout_marginTop="28dp"
+        android:text="Quantity"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/urtextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/urcheckBox2"
+        android:layout_below="@+id/urcheckBox2"
+        android:layout_marginTop="32dp"
+        android:text="Item name"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ureditText8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/urtextView1"
+        android:layout_alignLeft="@+id/urcheckBox1"
+        android:layout_alignRight="@+id/urspinner1"
+        android:layout_below="@+id/urcheckBox1"
+        android:ems="10"
+        android:hint="Enter Supplier Mobile"
+        android:inputType="phone" />
+
+</RelativeLayout>
+
+ </ScrollView>

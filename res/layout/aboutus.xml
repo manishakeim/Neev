@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    android:background="@drawable/about"
+    tools:context="com.example.neev.AboutUs" >
+    
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="80dp"      
+         android:layout_centerHorizontal="true"
+         android:scaleType="fitXY"
+         android:src="@drawable/slide" />
+
+   <TextView
+            android:id="@+id/cur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp" 
+             android:layout_below="@+id/imageView1"
+        	android:layout_centerHorizontal="true" 
+        	android:paddingTop="@dimen/activity_horizontal_margin"       	
+    		android:paddingLeft="@dimen/activity_horizontal_margin"
+    		android:paddingRight="@dimen/activity_horizontal_margin"    
+            android:text="About Us" />
+   <View
+             android:layout_width="fill_parent"
+             android:layout_height="2dp"
+             android:layout_below="@+id/cur"
+             android:background="#c0c0c0"/>
+   
+   <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp" 
+            android:layout_marginTop="10dp"
+        	android:layout_centerHorizontal="true"        	  
+    		android:paddingLeft="@dimen/activity_horizontal_margin"
+    		android:paddingRight="@dimen/activity_horizontal_margin"    
+        	android:layout_below="@+id/cur"
+            android:text="Neev is a charitable organization based in Shivpuri, Madhya Pradesh that was started by four idealistic friends with similar mindsets who met while at university in England and wanted to work with the poor and underprivileged. Poverty co-exists in Madhya Pradesh (M.P) amid vast pools of illiteracy, in a socio-cultural setting where women are accorded low status, under-age marriages continue, and the shortage of health services and trained medical personnel add to the risk of child bearing. 37 per cent of the population in M.P lives below the poverty line, significantly higher than the national average of 26 per cent. M.P has a population of 70 million, when compared with the Democratic Republic of the Congo, the war-racked African state of 62 million inhabitants, the two were found to have near-identical levels of poverty." />
+   
+   <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp" 
+        	android:layout_centerHorizontal="true"        	 
+    		android:paddingLeft="@dimen/activity_horizontal_margin"
+    		android:paddingRight="@dimen/activity_horizontal_margin"    
+        	android:layout_below="@+id/des"
+        	android:layout_marginTop="10dp"
+            android:text="All these factors make for a lethal mix which results in among the worst maternal and infant mortality ratios in the country. MP scores the top position for highest Infant Mortality Rate, lowest life expectancy of 57.7 years in comparison to Indian average of 63.2 years and also tops the lists of Indian states with more than 60 percent malnutrition among children under the age of 5 years."  />
+
+  </RelativeLayout>
