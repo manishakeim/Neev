@@ -2,7 +2,8 @@
 
 GHCI 2015 Hackathon Project 1 - "IMA" : Logistics and Inventory Management App(LAIM)
 
-This repository aims to provide user-friendly interface to automate operations related to sales, to track 
+This repository aims to provide user-friendly interface to automate operations related to sales, to track Raw materials, furnished products availability and to place order.
+
 Author : Team Tech Pirates 
 College: Maitreyi College, University of Delhi
 
